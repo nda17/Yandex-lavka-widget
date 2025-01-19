@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const cart = document.querySelector('.cart');
 	const paymentBtn = document.querySelector('.wrapper-payment-btn');
 	let activeTarget = null;
+	let touchEvent = null;
 	let countProducts = 0;
 
 	const checkProducts = () => {
@@ -16,17 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	};
 
-	const dragMove = e => {
+	const dragTouch = e => {
 		e.preventDefault();
+		activeTarget = e.target;
+		touchEvent = e.targetTouches[0];
 
 		let touch = e.targetTouches[0];
 
 		e.target.style.top = `${touch.pageY}px`;
 		e.target.style.left = `${touch.pageX}px`;
-
-		// e.target.classList.add('item-hold');
-		// setTimeout(() => e.target.classList.add('item-hide'), 0);
-		// activeTarget = e.target;
 	};
 
 	// const dragend = e => {
@@ -39,31 +38,24 @@ window.addEventListener('DOMContentLoaded', () => {
 	// 	e.preventDefault();
 	// };
 
-	// const drop = () => {
-	// 	cart.append(activeTarget);
-	// 	activeTarget.classList.add('active');
-	// 	cart.classList.remove('cart-hovered');
-	// 	countProducts < 3 && checkProducts();
-	// };
-
-	// const dragEnter = e => {
-	// 	cart.classList.add('cart-hovered');
-	// };
-
-	// const dragLeave = () => {
-	// 	cart.classList.remove('cart-hovered');
-	// };
+	const dropTouch = e => {
+		if (touchEvent.pageY > 330) {
+			cart.append(activeTarget);
+			activeTarget.classList.add('active');
+			touchEvent = null;
+			activeTarget = null;
+			countProducts < 3 && checkProducts();
+		} else {
+		}
+	};
 
 	storeShelf.forEach(item => {
-		item.addEventListener('touchmove', dragMove);
-		// item.addEventListener('touchend', drop);
-		// touchstart
-		// item.addEventListener('dragend', dragend);
-		// touchend
+		item.addEventListener('touchmove', dragTouch);
+		item.addEventListener('touchend', dropTouch);
 	});
 
 	// cart.addEventListener('dragover', dragOver);
-	// item.addEventListener('touchend', drop);
+	// cart.addEventListener('touchend', () => console.log('fffff'));
 	// cart.addEventListener('dragenter', dragEnter);
 	// cart.addEventListener('dragleave', dragLeave);
 });
