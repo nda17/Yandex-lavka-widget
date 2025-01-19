@@ -39,8 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		countProducts < 3 && checkProducts();
 	};
 
-	const dragEnter = e => {
-		e.preventDefault();
+	const dragEnter = () => {
 		cart.classList.add('cart-hovered');
 	};
 
