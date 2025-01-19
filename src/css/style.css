@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background-color: transparent;
+	outline: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+@font-face {
+	font-family: 'YSText';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/YandexSansText-Medium.woff') format('woff'),
+		url('../fonts/YandexSansText-Medium.woff2') format('woff2'),
+		url('../fonts/YandexSansText-Medium.ttf') format('truetype');
+}
+
+html,
+body {
+	line-height: 1;
+	font-size: 16px;
+	min-width: 320px;
+	color: #000000;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.banner-container {
+	width: 300px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	padding-top: 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #edf6ff;
+	filter: drop-shadow(2px 4px 6px #000000);
+	animation: opacity 1.2s ease-out;
+}
+
+.store-shelf-wrapper {
+	width: 211.37px;
+	height: 431.35px;
+	background: url(../img/store-shelf.png) no-repeat center;
+	filter: drop-shadow(2px 4px 6px #000000);
+	position: relative;
+	animation: move-store-shelf 0.7s ease-in-out;
+}
+
+.item:hover {
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+.cart {
+	transition: all 0.1s;
+	position: absolute;
+	bottom: 0;
+	width: 277px;
+	height: 229px;
+	animation: move-general 0.9s ease-out;
+}
+
+.cart img {
+	pointer-events: none;
+}
+
+.cart .cart-image {
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	margin: auto;
+}
+
+.cart-hovered {
+	filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.item-hold {
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+}
+
+.item-hide {
+	display: none;
+}
+
+.grape-juice,
+.milk,
+.jam,
+.cheese,
+.beef-steak,
+.chicken,
+.chips,
+.pineapple,
+.banana,
+.apple,
+.lettuce-leaf {
+	position: absolute;
+}
+
+.store-shelf-wrapper .grape-juice {
+	top: -3px;
+	left: 22px;
+}
+
+.cart .grape-juice {
+	bottom: 58px;
+	left: 60px;
+	transform: scale(1.2) rotate(345deg);
+	-webkit-transform: scale(1.2) rotate(345deg);
+}
+
+.store-shelf-wrapper .milk {
+	top: 31px;
+	left: 64px;
+}
+
+.cart .milk {
+	z-index: 8;
+	bottom: 68px;
+	left: 80px;
+	transform: scale(1.5) rotate(359deg);
+	-webkit-transform: scale(1.5) rotate(359deg);
+}
+
+.store-shelf-wrapper .jam {
+	top: 80px;
+	left: 103px;
+}
+
+.cart .jam {
+	z-index: 8;
+	bottom: 130px;
+	left: 140px;
+	transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+}
+
+.store-shelf-wrapper .cheese {
+	top: 89px;
+	left: 158px;
+}
+
+.cart .cheese {
+	z-index: 9;
+	bottom: 50px;
+	left: 70px;
+	transform: scale(1) rotate(35deg);
+	-webkit-transform: scale(1) rotate(35deg);
+}
+
+.store-shelf-wrapper .beef-steak {
+	top: 167px;
+	left: 7px;
+}
+
+.cart .beef-steak {
+	z-index: 3;
+	bottom: 50px;
+	right: 20px;
+	transform: scale(1.25) rotate(-29deg);
+	-webkit-transform: scale(1.25) rotate(-29deg);
+}
+
+.store-shelf-wrapper .chicken {
+	top: 169px;
+	left: 58px;
+}
+
+.cart .chicken {
+	bottom: 90px;
+	right: 20px;
+	transform: scale(1.4) rotate(100deg);
+	-webkit-transform: scale(1.4) rotate(100deg);
+}
+
+.store-shelf-wrapper .chips {
+	top: 176px;
+	left: 129px;
+}
+
+.cart .chips {
+	z-index: 8;
+	bottom: 90px;
+	left: 110px;
+	transform: scale(1.2) rotate(7deg);
+	-webkit-transform: scale(1.2) rotate(7deg);
+}
+
+.store-shelf-wrapper .pineapple {
+	top: 237px;
+	left: 13px;
+}
+
+.cart .pineapple {
+	z-index: 9;
+	bottom: 70px;
+	left: 170px;
+	transform: scale(1.45) rotate(7deg);
+	-webkit-transform: scale(1.45) rotate(7deg);
+}
+
+.store-shelf-wrapper .banana {
+	top: 265px;
+	left: 58px;
+}
+
+.cart .banana {
+	z-index: 10;
+	bottom: 59px;
+	left: 121px;
+	transform: scale(1.5) rotate(336deg);
+	-webkit-transform: scale(1.5) rotate(336deg);
+}
+
+.store-shelf-wrapper .apple {
+	top: 276px;
+	left: 115px;
+}
+
+.cart .apple {
+	bottom: 130px;
+	left: 50px;
+	transform: scale(1.25) rotate(-17deg);
+	-webkit-transform: scale(1.25) rotate(-17deg);
+}
+
+.store-shelf-wrapper .lettuce-leaf {
+	top: 267px;
+	left: 156px;
+}
+
+.cart .lettuce-leaf {
+	bottom: 125px;
+	left: 100px;
+	transform: scale(1.6) rotate(-67deg);
+	-webkit-transform: scale(1.6) rotate(-67deg);
+}
+
+.wrapper-payment-btn {
+	visibility: hidden;
+
+	transition: all 1s;
+	position: absolute;
+	bottom: 20px;
+	z-index: 100;
+}
+
+.wrapper-payment-btn-active {
+	visibility: visible;
+	animation: move-general 0.8s ease-out;
+}
+
+.payment-btn {
+	width: 174px;
+	height: 56px;
+	border-radius: 16px;
+	background-color: #fce000;
+	-webkit-box-shadow: 0px 0px 10px 7px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 0px 10px 7px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 0px 10px 7px rgba(34, 60, 80, 0.2);
+	color: #21201f;
+	font-weight: 500;
+	line-height: 17px;
+	font-family: 'YSText';
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.7s;
+	animation: pulse 1.2s ease-out infinite;
+}
+
+.payment-btn:hover {
+	background-color: #e0a81a;
+}
+
+@keyframes move-store-shelf {
+	from {
+		transform: translateY(-100px);
+		-webkit-transform: translateY(-100px);
+	}
+
+	to {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+}
+
+@keyframes move-general {
+	from {
+		transform: translateY(100px);
+		-webkit-transform: translateY(100px);
+	}
+
+	to {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+
+	50% {
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		opacity: 0.85;
+	}
+
+	to {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.65;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
