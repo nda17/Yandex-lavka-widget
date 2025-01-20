@@ -32,7 +32,25 @@
 			<a href='https://lavka.yandex.ru/' aria-label="Оплатить корзину" class="payment-btn">Оплатить корзину</a>
 		</span>
 	</div>
-	<script src="./src/js/script.js"></script>
+	<script>
+		const isTouchDevice = () => {
+			return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+		};
+
+		const loadScript = (src) => {
+			let script = document.createElement('script');
+			script.src = src;
+			document.body.appendChild(script);
+		};
+
+		window.onload = () => {
+			if (isTouchDevice()) {
+				loadScript('./src/js/touch-devices/touch-script.js');
+			} else {
+				loadScript('./src/js/non-touch-devices/non-touch-script.js');
+			}
+		};
+	</script>
 </body>
 
 </html>
