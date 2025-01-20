@@ -95,7 +95,7 @@ body {
 .store-shelf-wrapper {
 	width: 211.37px;
 	height: 431.35px;
-	background: url(../img/store-shelf.png) no-repeat center;
+	background: url(../img/store-shelf.svg) no-repeat center;
 	-webkit-filter: drop-shadow(2px 4px 6px #000000);
 	filter: drop-shadow(2px 4px 6px #000000);
 	position: relative;
@@ -120,11 +120,10 @@ body {
 	animation: move-general 0.9s ease-out;
 }
 
-.cart img {
-	pointer-events: none;
-}
-
 .cart .cart-image {
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	z-index: 100;
@@ -161,153 +160,201 @@ body {
 }
 
 .store-shelf-wrapper .grape-juice {
+	width: 37px;
+	height: 124.12px;
 	top: -3px;
 	left: 22px;
 }
 
 .cart .grape-juice {
-	top: 46px !important;
-	left: 60px !important;
-	-ms-transform: scale(1.2) rotate(345deg);
-	transform: scale(1.2) rotate(345deg);
-	-webkit-transform: scale(1.2) rotate(345deg);
+	width: 45px;
+	height: 144.12px;
+	top: 31px !important;
+	left: 55px !important;
+	transform: rotate(345deg);
+	-ms-transform: rotate(345deg);
+	-webkit-transform: rotate(345deg);
 }
 
 .store-shelf-wrapper .milk {
+	width: 37px;
+	height: 90.73px;
 	top: 31px;
 	left: 64px;
 }
 
 .cart .milk {
 	z-index: 8;
-	top: 69px !important;
-	left: 80px !important;
-	-ms-transform: scale(1.5) rotate(359deg);
-	transform: scale(1.5) rotate(359deg);
-	-webkit-transform: scale(1.5) rotate(359deg);
+	width: 54.19px;
+	height: 132.89px;
+	top: 49px !important;
+	left: 72px !important;
+	-ms-transform: rotate(359deg);
+	transform: rotate(359deg);
+	-webkit-transform: rotate(359deg);
 }
 
 .store-shelf-wrapper .jam {
+	width: 46px;
+	height: 41.34px;
 	top: 80px;
 	left: 103px;
 }
 
 .cart .jam {
 	z-index: 8;
-	top: 57px !important;
+	width: 49px;
+	height: 44.34px;
+	top: 59px !important;
 	left: 140px !important;
-	-ms-transform: rotate(7deg);
 	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
 	-webkit-transform: rotate(7deg);
 }
 
 .store-shelf-wrapper .cheese {
+	width: 36.2px;
+	height: 34.38px;
 	top: 89px;
 	left: 158px;
 }
 
 .cart .cheese {
 	z-index: 9;
+	width: 46.2px;
+	height: 44.38px;
 	top: 144px !important;
 	left: 70px !important;
-	-ms-transform: scale(1) rotate(35deg);
-	transform: scale(1) rotate(35deg);
-	-webkit-transform: scale(1) rotate(35deg);
+	transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
 }
 
 .store-shelf-wrapper .beef-steak {
+	width: 54px;
+	height: 53.76px;
 	top: 167px;
 	left: 7px;
 }
 
 .cart .beef-steak {
 	z-index: 3;
+	width: 85px;
+	height: 56.76px;
 	top: 120px !important;
 	left: 203px !important;
-	-ms-transform: scale(1.25) rotate(-29deg);
-	transform: scale(1.25) rotate(-29deg);
-	-webkit-transform: scale(1.25) rotate(-29deg);
+	transform: rotate(-29deg);
+	-ms-transform: rotate(-29deg);
+	-webkit-transform: rotate(-29deg);
 }
 
 .store-shelf-wrapper .chicken {
+	width: 66px;
+	height: 62.85px;
 	top: 169px;
 	left: 58px;
+	transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
 }
 
 .cart .chicken {
+	width: 74.47px;
+	height: 69.85px;
 	left: 191px !important;
-	top: 76px !important;
-	-ms-transform: scale(1.4) rotate(100deg);
-	transform: scale(1.4) rotate(100deg);
-	-webkit-transform: scale(1.4) rotate(100deg);
+	top: 65px !important;
+	transform: rotate(100deg);
+	-ms-transform: rotate(100deg);
+	-webkit-transform: rotate(100deg);
 }
 
 .store-shelf-wrapper .chips {
+	width: 76.17px;
+	height: 46.98px;
 	top: 176px;
 	left: 129px;
 }
 
 .cart .chips {
 	z-index: 8;
-	top: 92px !important;
+	width: 96.17px;
+	height: 66.98px;
+	top: 80px !important;
 	left: 110px !important;
-	-ms-transform: scale(1.2) rotate(7deg);
-	transform: scale(1.2) rotate(7deg);
-	-webkit-transform: scale(1.2) rotate(7deg);
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
 }
 
 .store-shelf-wrapper .pineapple {
+	width: 35px;
+	height: 74.08px;
 	top: 237px;
 	left: 13px;
 }
 
 .cart .pineapple {
 	z-index: 9;
-	top: 86px !important;
-	left: 170px !important;
-	-ms-transform: scale(1.45) rotate(7deg);
-	transform: scale(1.45) rotate(7deg);
-	-webkit-transform: scale(1.45) rotate(7deg);
+	width: 50.03px;
+	height: 105.89px;
+	top: 69px !important;
+	left: 164px !important;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
 }
 
 .store-shelf-wrapper .banana {
+	width: 47px;
+	height: 47.41px;
 	top: 265px;
 	left: 58px;
 }
 
 .cart .banana {
 	z-index: 10;
-	top: 121px !important;
-	left: 121px !important;
-	-ms-transform: scale(1.5) rotate(336deg);
-	transform: scale(1.5) rotate(336deg);
-	-webkit-transform: scale(1.5) rotate(336deg);
+	width: 71px;
+	height: 71.62px;
+	top: 110px !important;
+	left: 110px !important;
+	transform: rotate(336deg);
+	-ms-transform: rotate(336deg);
+	-webkit-transform: rotate(336deg);
 }
 
 .store-shelf-wrapper .apple {
+	width: 31px;
+	height: 35.99px;
 	top: 276px;
 	left: 115px;
 }
 
 .cart .apple {
-	top: 130px !important;
-	left: 50px !important;
-	-ms-transform: scale(1.25) rotate(-17deg);
-	transform: scale(1.25) rotate(-17deg);
-	-webkit-transform: scale(1.25) rotate(-17deg);
+	z-index: 8;
+	width: 41px;
+	height: 45.99px;
+	top: 55px !important;
+	left: 175px !important;
+	transform: rotate(-17deg);
+	-ms-transform: rotate(-17deg);
+	-webkit-transform: rotate(-17deg);
 }
 
 .store-shelf-wrapper .lettuce-leaf {
+	width: 61.74px;
+	height: 50.98px;
 	top: 267px;
 	left: 156px;
 }
 
 .cart .lettuce-leaf {
-	top: 53px !important;
+	width: 91.74px;
+	height: 80.98px;
+	top: 42px !important;
 	left: 100px !important;
-	-ms-transform: scale(1.6) rotate(-67deg);
-	transform: scale(1.6) rotate(-67deg);
-	-webkit-transform: scale(1.6) rotate(-67deg);
+	transform: rotate(-67deg);
+	-ms-transform: rotate(-67deg);
+	-webkit-transform: rotate(-67deg);
 }
 
 .wrapper-payment-btn {
