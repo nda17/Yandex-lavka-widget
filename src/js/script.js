@@ -58,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	};
 
 	storeShelf.forEach(item => {
-		item.addEventListener('touchstart', dropTouchStart);
 		item.addEventListener('touchmove', dragTouchMove);
 		item.addEventListener('touchend', dropTouch);
 	});
