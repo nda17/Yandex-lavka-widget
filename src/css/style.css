@@ -56,22 +56,22 @@ body {
 }
 
 body {
-	/* display: -webkit-box;
+	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex; */
+	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	/* align-items: center; */
+	align-items: center;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	/* justify-content: center; */
+	justify-content: center;
 	height: 100vh;
 }
 
 .banner-container {
 	width: 300px;
 	height: 600px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	padding-top: 28px;
@@ -96,10 +96,9 @@ body {
 	width: 211.37px;
 	height: 431.35px;
 	background: url(../img/store-shelf.png) no-repeat center;
-	/* -webkit-filter: drop-shadow(2px 4px 6px #000000);
-	filter: drop-shadow(2px 4px 6px #000000); */
-	/* position: relative;  */
-	position: static;
+	-webkit-filter: drop-shadow(2px 4px 6px #000000);
+	filter: drop-shadow(2px 4px 6px #000000);
+	position: relative;
 	-webkit-animation: move-store-shelf 0.7s ease-in-out;
 	animation: move-store-shelf 0.7s ease-in-out;
 }
@@ -167,7 +166,7 @@ body {
 }
 
 .cart .grape-juice {
-	bottom: 58px !important;
+	top: 46px !important;
 	left: 60px !important;
 	-ms-transform: scale(1.2) rotate(345deg);
 	transform: scale(1.2) rotate(345deg);
@@ -181,8 +180,8 @@ body {
 
 .cart .milk {
 	z-index: 8;
-	bottom: 68px;
-	left: 80px;
+	top: 69px !important;
+	left: 80px !important;
 	-ms-transform: scale(1.5) rotate(359deg);
 	transform: scale(1.5) rotate(359deg);
 	-webkit-transform: scale(1.5) rotate(359deg);
@@ -195,8 +194,8 @@ body {
 
 .cart .jam {
 	z-index: 8;
-	bottom: 130px;
-	left: 140px;
+	top: 57px !important;
+	left: 140px !important;
 	-ms-transform: rotate(7deg);
 	transform: rotate(7deg);
 	-webkit-transform: rotate(7deg);
@@ -209,8 +208,8 @@ body {
 
 .cart .cheese {
 	z-index: 9;
-	bottom: 50px;
-	left: 70px;
+	top: 144px !important;
+	left: 70px !important;
 	-ms-transform: scale(1) rotate(35deg);
 	transform: scale(1) rotate(35deg);
 	-webkit-transform: scale(1) rotate(35deg);
@@ -223,8 +222,8 @@ body {
 
 .cart .beef-steak {
 	z-index: 3;
-	bottom: 50px;
-	right: 20px;
+	top: 120px !important;
+	left: 203px !important;
 	-ms-transform: scale(1.25) rotate(-29deg);
 	transform: scale(1.25) rotate(-29deg);
 	-webkit-transform: scale(1.25) rotate(-29deg);
@@ -236,8 +235,8 @@ body {
 }
 
 .cart .chicken {
-	bottom: 90px;
-	right: 20px;
+	left: 191px !important;
+	top: 76px !important;
 	-ms-transform: scale(1.4) rotate(100deg);
 	transform: scale(1.4) rotate(100deg);
 	-webkit-transform: scale(1.4) rotate(100deg);
@@ -250,8 +249,8 @@ body {
 
 .cart .chips {
 	z-index: 8;
-	bottom: 90px;
-	left: 110px;
+	top: 92px !important;
+	left: 110px !important;
 	-ms-transform: scale(1.2) rotate(7deg);
 	transform: scale(1.2) rotate(7deg);
 	-webkit-transform: scale(1.2) rotate(7deg);
@@ -264,8 +263,8 @@ body {
 
 .cart .pineapple {
 	z-index: 9;
-	bottom: 70px;
-	left: 170px;
+	top: 86px !important;
+	left: 170px !important;
 	-ms-transform: scale(1.45) rotate(7deg);
 	transform: scale(1.45) rotate(7deg);
 	-webkit-transform: scale(1.45) rotate(7deg);
@@ -278,8 +277,8 @@ body {
 
 .cart .banana {
 	z-index: 10;
-	bottom: 59px;
-	left: 121px;
+	top: 121px !important;
+	left: 121px !important;
 	-ms-transform: scale(1.5) rotate(336deg);
 	transform: scale(1.5) rotate(336deg);
 	-webkit-transform: scale(1.5) rotate(336deg);
@@ -291,8 +290,8 @@ body {
 }
 
 .cart .apple {
-	bottom: 130px;
-	left: 50px;
+	top: 130px !important;
+	left: 50px !important;
 	-ms-transform: scale(1.25) rotate(-17deg);
 	transform: scale(1.25) rotate(-17deg);
 	-webkit-transform: scale(1.25) rotate(-17deg);
@@ -304,8 +303,8 @@ body {
 }
 
 .cart .lettuce-leaf {
-	bottom: 125px;
-	left: 100px;
+	top: 53px !important;
+	left: 100px !important;
 	-ms-transform: scale(1.6) rotate(-67deg);
 	transform: scale(1.6) rotate(-67deg);
 	-webkit-transform: scale(1.6) rotate(-67deg);
